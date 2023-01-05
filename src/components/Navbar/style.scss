@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    padding: 0 2rem;
+    width: 100%;
+    position: absolute;
+
+    h3 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .open_btn {
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        display: none;
+    }
+
+    nav {
+        .stil {
+            margin: 0 1.5rem;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(208, 196, 196);
+                transition: all .3s;
+            }
+        }
+
+        #git {
+            cursor: pointer;
+            margin-left: 20px;
+            color: white;
+        }
+
+        #iks {
+            border: none;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        position: relative;
+
+        h3 {
+            color: black;
+        }
+
+        .open_btn {
+            display: block;
+        }
+
+        nav {
+            position: fixed;
+            top: 25%;
+            left: 0;
+            height: 40%;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            background-color: rgb(255, 255, 255);
+            transition: all .9s;
+            transform: translateY(-100vh);
+
+            .stil {
+                color: black;
+            }
+
+            #git {
+                color: black;
+                margin-left: 30px;
+            }
+
+            button {
+                margin-left: 27px;
+
+                #iks {
+                    color: black;
+
+                }
+            }
+        }
+
+        .responsive_nav {
+            transform: none;
+        }
+    }
+}

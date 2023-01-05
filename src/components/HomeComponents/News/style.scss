@@ -1,0 +1,90 @@
+.news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+    .metn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        a {
+            text-decoration: none;
+            list-style: none;
+            max-width: 600px;
+            line-height: 1;
+            color: black;
+
+            &:hover {
+                color: blue;
+            }
+
+        }
+
+        .by {
+            font-size: 35px;
+            max-width: 600px;
+            font-weight: 750;
+
+        }
+        .kc{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 600px;
+        }
+    }
+    .date{
+       font-family: 'Dancing Script', cursive;
+    }
+
+}
+@media only screen and (max-width: 990px) {
+    .news {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+    
+        .metn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            a {
+                text-decoration: none;
+                list-style: none;
+                max-width: 600px;
+                line-height: 1;
+                color: black;
+    
+                &:hover {
+                    color: blue;
+                }
+    
+            }
+    
+            .by {
+                font-size: 35px;
+                font-weight: 750;
+                max-width: 600px;
+    
+            }
+            .kc{
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                max-width: 600px;
+            }
+        }
+        .date{
+           font-family: 'Dancing Script', cursive;
+        }
+    
+    }
+}
